@@ -182,7 +182,6 @@ body{
 .ourTeam .row{
     margin-bottom: 4rem;
     padding: 0 2rem;
-    display: none;
 }
 .row .team-member{
     width: 20rem;
@@ -308,12 +307,40 @@ body{
         line-height: 25px;
         padding-bottom: 20px;
     }
+    .row .team-member{
+        width: 20rem;
+        height: 27rem;
+    }
+    .team-member .team-member-img{
+        width: 11rem;
+        height: 11rem;
+    }
 
 }
 
 @media only screen and (max-width: 776px) {
     .header .header-content {
         margin: 0 6rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .ourTeam .row{
+        flex-wrap: wrap;
+    }
+    .row .team-member{
+        flex-direction: row;
+        width: 30rem;
+        height: 15rem;
+    }
+    .team-member .team-member-img{
+        margin-bottom: 0;
+        border: 5px solid #0F3460;
+        width: 11rem;
+        height: 8rem
+    }
+    .team-member .team-member-img img{
+        width: 100%;
     }
 }
 
@@ -335,6 +362,13 @@ body{
     }
     .header-content .header-btn{
         padding: 12px 32px;
+    }
+    .team-member .team-member-img{
+        width: 11rem;
+        height: 8rem
+    }
+    .team-member .team-member-img img{
+        height: 100%;
     }
 }
 
