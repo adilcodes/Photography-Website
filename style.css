@@ -22,10 +22,10 @@ body{
     top: 0;
     z-index: 2;
 }
-.navBar h1, i{
+.navBar h1,
+.navBar i{
     font-size: 30px;
     color: #0F3460;
-    font-weight: 900;
 }
 /* Nav Bar End */
 
@@ -176,5 +176,57 @@ body{
     background-color: #16213E;
     color: #fff;
 }
-
 /* Our Work End */
+
+/* Our Team Start */
+.row .team-member{
+    width: 20rem;
+    height: 29rem;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    color: #0F3460;
+}
+.team-member .team-member-img{
+    position: relative;
+    width: 13rem;
+    height: 13rem;
+    border: 10px solid #0F3460;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.team-member-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+
+}
+.team-member .team-member-details{
+    text-align: center;
+}
+.team-member-details h2{
+    padding-bottom: 15px;
+}
+.team-member-details ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 1rem;
+    list-style: none;
+    font-size: 20px;
+}
+.team-member-details ul a{
+    color: #0F3460;
+    transition: 0.2s ease-in-out;
+}
+.team-member-details ul a:hover{
+    color: #E94560;
+}
+/* Our Team End */
