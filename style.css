@@ -8,6 +8,8 @@
 body{
     background-color: #F0F0F0;
 }
+
+/* Nav Bar Start */
 .navBar{
     background-color: #fff;
     width: 100%;
@@ -15,19 +17,25 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 .navBar h1, i{
     font-size: 30px;
     color: #0F3460;
     font-weight: 900;
 }
+/* Nav Bar End */
+
+/* Header Start */
 .header{
     position: relative;
     background: url(images/headerImg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
     width: 100%;
     height: 95vh;
     display: flex;
@@ -80,3 +88,93 @@ body{
     background-color: #16213E;
     color: #fff;
 }
+/* Header End */
+
+/* Section Title Start */
+.section-title{
+    padding: 90px 0 70px;
+    text-align: center;
+    color: #0F3460;
+}
+.section-title h1{
+    padding-bottom: 20px;
+    letter-spacing: 6px;
+}
+.section-title p{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* Section Title End */
+
+/* Our Work Start */
+.ourWork .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+.row .work{
+    position: relative;
+    width: 30rem;
+    height: 24rem;
+    overflow: hidden;
+}
+.work img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.work .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1A1A2E;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.work .work-details{
+    width: 50%;
+    height: 100%;
+    background-color: #0F3460;
+    padding: 3rem 1rem;
+    color: #fff;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
+}
+.work-details h1{
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+}
+.work-details p{
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+.work-details .readMore-btn{
+    padding: 10px 9px;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background-color: #E94560;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+}
+.work:hover .overlay{
+    opacity: 0.6;
+}
+.work:hover .work-details{
+    transform: translateX(0%);
+}
+.readMore-btn:hover{
+    background-color: #16213E;
+    color: #fff;
+}
+
+/* Our Work End */
