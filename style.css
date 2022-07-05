@@ -179,6 +179,9 @@ body{
 /* Our Work End */
 
 /* Our Team Start */
+.ourTeam .row{
+    margin-bottom: 4rem;
+}
 .row .team-member{
     width: 20rem;
     height: 29rem;
@@ -204,8 +207,6 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-
-
 }
 .team-member .team-member-details{
     text-align: center;
@@ -230,3 +231,51 @@ body{
     color: #E94560;
 }
 /* Our Team End */
+
+/* Footer Start */
+.footer{
+    background-color: #16213E;
+    width: 100%;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.footer h1{
+    letter-spacing: 10px;
+    padding-bottom: 30px;
+}
+.footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 3rem;
+}
+.footer ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+.footer ul li a:hover{
+    background-color: #fff;
+    color: #E94560;
+}
+.footer p{
+    font-size: 18px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+/* Footer End */
