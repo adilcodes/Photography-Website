@@ -112,7 +112,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding-bottom: 2rem;
+    padding: 0 2rem 2rem;
 }
 .row .work{
     position: relative;
@@ -145,7 +145,7 @@ body{
     padding: 3rem 1rem;
     color: #fff;
     z-index: 1;
-    transform: translateX(-100%);
+    transform: translateX(-110%);
     transition: 0.3s ease-in-out;
 }
 .work-details h1{
@@ -181,6 +181,8 @@ body{
 /* Our Team Start */
 .ourTeam .row{
     margin-bottom: 4rem;
+    padding: 0 2rem;
+    display: none;
 }
 .row .team-member{
     width: 20rem;
@@ -191,13 +193,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
     color: #0F3460;
 }
 .team-member .team-member-img{
     position: relative;
     width: 13rem;
     height: 13rem;
+    margin-bottom: auto;
     border: 10px solid #0F3460;
     border-radius: 50%;
     overflow: hidden;
@@ -276,6 +278,81 @@ body{
     font-size: 18px;
     letter-spacing: 2px;
     word-spacing: 3px;
+    text-align: center;
 }
 
 /* Footer End */
+
+/* Responsiveness */
+@media only screen and (max-width: 1014px) {
+    .work .work-details h1{
+        padding-bottom: 10px
+    }
+    .work .work-details p{
+        line-height: 22px;
+        padding-bottom: 16px;
+    }
+}
+
+@media only screen and (max-width: 854px) {
+    .header .header-content {
+        margin: 0 9rem;
+    }
+    .work .work-details{
+        width: 100%;
+    }
+    .work-details h1{
+        padding-bottom: 20px;
+    }
+    .work-details p{
+        line-height: 25px;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 776px) {
+    .header .header-content {
+        margin: 0 6rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .ourWork .row{
+        flex-wrap: wrap;
+    }
+    .row .work{
+        height: 20rem;
+    }
+}
+
+@media only screen and (max-width: 447px) {
+    .navBar{
+        padding: 15px 2rem;
+    }
+    .header .header-content {
+        margin: 0 3rem;
+    }
+    .header-content .header-btn{
+        padding: 12px 32px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .header{
+        height: 74vh;
+    }
+    .header .header-content {
+        margin: 0 2rem;
+    }
+    .header .header-content h1{
+        font-size: 28px;
+    }
+    .header .header-content p{
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .header-content .header-btn{
+        padding: 10px 26px;
+    }
+}
