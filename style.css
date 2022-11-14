@@ -347,35 +347,59 @@ body{
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .header .header-content {
+        margin: 0 3rem;
+    }
+    .header-content h1{
+        letter-spacing: 3px;
+        font-size: 28px;
+    }
+    .header-content .header-btn{
+        padding: 12px 32px;
+    }
+}
+
 @media only screen and (max-width: 447px) {
     .navBar{
         padding: 15px 2rem;
     }
-    .header .header-content {
-        margin: 0 3rem;
-    }
-    .header-content .header-btn{
-        padding: 12px 32px;
+    .header-content p{
+        font-size: 17px;
+        line-height: 29px;
     }
     .team-member .team-member-img{
         width: 11rem;
         height: 8rem
     }
+    .section-title p {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 392px) {
+    .header .header-content {
+        margin: 0px 1rem;
+    }
+    .header-content h1 {
+        letter-spacing: 3px;
+        font-size: 27px;
+    }
+    .header-content p {
+        font-size: 16px;
+        line-height: 27px;
+    }
+    .section-title {
+        padding: 80px 0 49px;
+    }
+    .ourWork .row {
+        padding: 0 2rem;
+    }
 }
 
 @media only screen and (max-width: 320px) {
     .header{
-        height: 74vh;
-    }
-    .header .header-content {
-        margin: 0 2rem;
-    }
-    .header .header-content h1{
-        font-size: 28px;
-    }
-    .header .header-content p{
-        font-size: 17px;
-        line-height: 25px;
+        height: 84vh;
     }
     .header-content .header-btn{
         padding: 10px 26px;
